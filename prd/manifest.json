@@ -1,10 +1,10 @@
 {
-  "name": ".tasks",
-  "description": "AI workflow files and task management structure for Augment Agent",
+  "name": "prd",
+  "description": "AI workflow files and task management structure for Augment Agent using the PRD approach",
   "author": "Stefan Neidig",
   "version": "1.0.0",
-  "tags": ["ai", "workflow", "tasks", "augment"],
-  "defaultTarget": ".",
+  "tags": ["ai", "workflow", "tasks", "augment", "prd"],
+  "defaultTarget": ".tasks",
   "postInstall": [
     "Review and customize the task management files in .tasks/",
     "Update process-tasks.mdc with your specific project needs",
