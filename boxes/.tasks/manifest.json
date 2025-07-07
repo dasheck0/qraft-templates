@@ -1,0 +1,14 @@
+{
+  "name": ".tasks",
+  "description": "AI workflow files and task management structure for Augment Agent",
+  "author": "Stefan Neidig",
+  "version": "1.0.0",
+  "tags": ["ai", "workflow", "tasks", "augment"],
+  "defaultTarget": ".",
+  "postInstall": [
+    "Review and customize the task management files in .tasks/",
+    "Update process-tasks.mdc with your specific project needs",
+    "Consider adding additional context files for your project"
+  ],
+  "exclude": []
+}
