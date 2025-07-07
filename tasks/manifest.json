@@ -1,0 +1,10 @@
+{
+  "name": "tasks",
+  "description": "Test box without dot prefix",
+  "author": "Stefan Neidig",
+  "version": "1.0.0",
+  "tags": ["test"],
+  "defaultTarget": ".",
+  "postInstall": [],
+  "exclude": []
+}
