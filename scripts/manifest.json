@@ -1,19 +1,19 @@
 {
   "name": "scripts",
-  "description": "This directory contains scripts for managing releases of the qraft CLI tool.",
+  "description": "Documentation and guides for documentation development.",
+  "author": "Unknown",
   "version": "1.0.0",
+  "defaultTarget": "./target",
+  "language": "Javascript",
   "tags": [
-    "ai",
     "documentation",
     "javascript",
     "simple",
     "documented"
   ],
-  "language": "Javascript",
   "features": [
-    "ai",
     "documentation",
     "javascript"
   ],
-  "defaultTarget": "./target"
+  "usage": "Run 'qraft copy scripts' to use this box"
 }
