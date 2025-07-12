@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "description": "This directory contains scripts for managing releases of the qraft CLI tool.",
+  "version": "1.0.0",
+  "tags": [
+    "ai",
+    "documentation",
+    "javascript",
+    "simple",
+    "documented"
+  ],
+  "language": "Javascript",
+  "features": [
+    "ai",
+    "documentation",
+    "javascript"
+  ],
+  "defaultTarget": "./target"
+}
