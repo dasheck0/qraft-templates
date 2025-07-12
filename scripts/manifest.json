@@ -4,16 +4,10 @@
   "author": "Unknown",
   "version": "1.0.0",
   "defaultTarget": "./target",
-  "language": "Javascript",
   "tags": [
     "documentation",
     "javascript",
     "simple",
     "documented"
-  ],
-  "features": [
-    "documentation",
-    "javascript"
-  ],
-  "usage": "Run 'qraft copy scripts' to use this box"
+  ]
 }
