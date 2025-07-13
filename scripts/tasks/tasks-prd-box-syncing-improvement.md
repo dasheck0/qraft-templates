@@ -66,4 +66,4 @@
   - [x] 5.3 Implement manifest change impact calculation (critical for version changes, medium for metadata)
   - [x] 5.4 Update change analysis recommendations to include manifest-specific guidance
   - [x] 5.5 Add manifest change statistics to ChangeAnalysisResult summary
-  - [x] 5.6 Write tests for manifest change analysis scenarios and risk level calculations
+  - [x] 5.6 Write tests for manifest change analysis scenarios and risk level calculation
