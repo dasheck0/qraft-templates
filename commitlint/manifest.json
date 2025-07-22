@@ -10,5 +10,8 @@
     "commitlint",
     "git",
     "githook"
+  ],
+  "postInstall": [
+    "Run npx lefthook install"
   ]
 }
