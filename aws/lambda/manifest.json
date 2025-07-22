@@ -1,0 +1,16 @@
+{
+  "name": "aws-lambda",
+  "description": "Some bash files for deploying and creating aws lambda functions",
+  "author": "dasheck0",
+  "version": "1.0.0",
+  "defaultTarget": "./scripts",
+  "remotePath": "aws/lambda",
+  "tags": [
+    "aws",
+    "lambda",
+    "bash",
+    "deployment",
+    "setup",
+    "script"
+  ]
+}
