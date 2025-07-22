@@ -1,0 +1,14 @@
+{
+  "lambdas": {
+    "aws-lambda-example": {
+      "functionName": "myproject-lambda-example",
+      "s3Bucket": "myproject",
+      "s3Prefix": "lambda/myproject-lambda-example",
+      "description": "Example lambda function for my project"
+    }
+  },
+  "defaults": {
+    "s3Bucket": "myproject",
+    "s3Prefix": "lambda"
+  }
+}

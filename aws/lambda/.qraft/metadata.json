@@ -1,0 +1,13 @@
+{
+  "lastSyncTimestamp": 1753185247599,
+  "createdTimestamp": 1753185247599,
+  "lastModifiedTimestamp": 1753185247599,
+  "checksum": "8930f99b286a66a25bde510deaa1aedb012a4d5950b53589b91eafd37925f24f",
+  "lastSyncedVersion": "1.0.0",
+  "syncState": "synced",
+  "syncCount": 1,
+  "lastRemoteChecksum": "8930f99b286a66a25bde510deaa1aedb012a4d5950b53589b91eafd37925f24f",
+  "metadataVersion": "1.0.0",
+  "sourceRegistry": "dasheck0/qraft-templates",
+  "sourceBoxReference": "dasheck0/qraft-templates/aws-lambda"
+}
