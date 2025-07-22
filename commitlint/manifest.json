@@ -1,0 +1,14 @@
+{
+  "name": "commitlint",
+  "description": "Configuration files for commitlint in combination with lefthook",
+  "author": "dasheck0",
+  "version": "1.0.0",
+  "defaultTarget": ".",
+  "remotePath": "commitlint",
+  "tags": [
+    "lefthook",
+    "commitlint",
+    "git",
+    "githook"
+  ]
+}

@@ -1,0 +1,7 @@
+# see https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md#run for keywords like {staged_files}
+
+commit-msg:
+  parallel: true
+  commands:
+    commitlint:
+      run: npx commitlint --edit "$1"
