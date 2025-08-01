@@ -1,0 +1,14 @@
+{
+  "name": "lovabletasks",
+  "description": "A list of markdown files and instructions to vibe code in a lovable environment",
+  "author": "dasheck0",
+  "version": "1.0.0",
+  "defaultTarget": ".lovabletasks",
+  "remotePath": "lovabletasks",
+  "tags": [
+    "lovable",
+    "ai",
+    "vibe coding",
+    "code generation"
+  ]
+}
