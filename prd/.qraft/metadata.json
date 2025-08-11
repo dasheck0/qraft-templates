@@ -1,0 +1,13 @@
+{
+  "lastSyncTimestamp": 1754239565675,
+  "createdTimestamp": 1754239565675,
+  "lastModifiedTimestamp": 1754239565675,
+  "checksum": "c2cd236ffd16c208c0826a1f3af32d32fd6ec54b9ed6c1cb8aab7965ec0fe4ff",
+  "lastSyncedVersion": "1.0.0",
+  "syncState": "synced",
+  "syncCount": 1,
+  "lastRemoteChecksum": "c2cd236ffd16c208c0826a1f3af32d32fd6ec54b9ed6c1cb8aab7965ec0fe4ff",
+  "metadataVersion": "1.0.0",
+  "sourceRegistry": "dasheck0/qraft-templates",
+  "sourceBoxReference": "prd"
+}
