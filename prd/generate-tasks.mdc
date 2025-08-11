@@ -1,1 +1,66 @@
-LS0tCmRlc2NyaXB0aW9uOiAKZ2xvYnM6IAphbHdheXNBcHBseTogZmFsc2UKLS0tCiMgUnVsZTogR2VuZXJhdGluZyBhIFRhc2sgTGlzdCBmcm9tIGEgUFJECgojIyBHb2FsCgpUbyBndWlkZSBhbiBBSSBhc3Npc3RhbnQgaW4gY3JlYXRpbmcgYSBkZXRhaWxlZCwgc3RlcC1ieS1zdGVwIHRhc2sgbGlzdCBpbiBNYXJrZG93biBmb3JtYXQgYmFzZWQgb24gYW4gZXhpc3RpbmcgUHJvZHVjdCBSZXF1aXJlbWVudHMgRG9jdW1lbnQgKFBSRCkuIFRoZSB0YXNrIGxpc3Qgc2hvdWxkIGd1aWRlIGEgZGV2ZWxvcGVyIHRocm91Z2ggaW1wbGVtZW50YXRpb24uCgojIyBPdXRwdXQKCi0gKipGb3JtYXQ6KiogTWFya2Rvd24gKGAubWRgKQotICoqTG9jYXRpb246KiogYC90YXNrcy9gCi0gKipGaWxlbmFtZToqKiBgdGFza3MtW3ByZC1maWxlLW5hbWVdLm1kYCAoZS5nLiwgYHRhc2tzLXByZC11c2VyLXByb2ZpbGUtZWRpdGluZy5tZGApCgojIyBQcm9jZXNzCgoKMS4gICoqUmVjZWl2ZSBQUkQgUmVmZXJlbmNlOioqIFRoZSB1c2VyIHBvaW50cyB0aGUgQUkgdG8gYSBzcGVjaWZpYyBQUkQgZmlsZQoyLiAgKipBbmFseXplIFBSRDoqKiBUaGUgQUkgcmVhZHMgYW5kIGFuYWx5emVzIHRoZSBmdW5jdGlvbmFsIHJlcXVpcmVtZW50cywgdXNlciBzdG9yaWVzLCBhbmQgb3RoZXIgc2VjdGlvbnMgb2YgdGhlIHNwZWNpZmllZCBQUkQuCjMuICAqKlVuZGVyc3RhbmQgdGhlIGltcGxlbWVudGF0aW9uIGd1aWRlbGluZXMqKjogUmVhZCBpbiB0aGUgaW1wbGVtZW50YXRpb24gZ3VpZGVsaW5lcyBmaXJzdCB1bmRlciAudGFza3MvaW1wbGVtZW50YXRpb25fZ3VpZGVsaW5lcy5tZCB0byB1bmRlcnN0YW5kIGhvdyB0aGlzIHByb2plY3QgaXMgc3RydWN0dXJlZCwgc28gdGhhdCB5b3Uga25vdyB3aGF0IG5lZWRzIHRvIGJlIGRvbmUuCjQuICAqKlBoYXNlIDE6IEdlbmVyYXRlIFBhcmVudCBUYXNrczoqKiBCYXNlZCBvbiB0aGUgUFJEIGFuYWx5c2lzLCBjcmVhdGUgdGhlIGZpbGUgYW5kIGdlbmVyYXRlIHRoZSBtYWluLCBoaWdoLWxldmVsIHRhc2tzIHJlcXVpcmVkIHRvIGltcGxlbWVudCB0aGUgZmVhdHVyZS4gVXNlIHlvdXIganVkZ2VtZW50IG9uIGhvdyBtYW55IGhpZ2gtbGV2ZWwgdGFza3MgdG8gdXNlLiBJdCdzIGxpa2VseSB0byBiZSBhYm91dCA1LiBQcmVzZW50IHRoZXNlIHRhc2tzIHRvIHRoZSB1c2VyIGluIHRoZSBzcGVjaWZpZWQgZm9ybWF0ICh3aXRob3V0IHN1Yi10YXNrcyB5ZXQpLiBJbmZvcm0gdGhlIHVzZXI6ICJJIGhhdmUgZ2VuZXJhdGVkIHRoZSBoaWdoLWxldmVsIHRhc2tzIGJhc2VkIG9uIHRoZSBQUkQuIFJlYWR5IHRvIGdlbmVyYXRlIHRoZSBzdWItdGFza3M/IFJlc3BvbmQgd2l0aCAnR28nIHRvIHByb2NlZWQuIgo1LiAgKipXYWl0IGZvciBDb25maXJtYXRpb246KiogUGF1c2UgYW5kIHdhaXQgZm9yIHRoZSB1c2VyIHRvIHJlc3BvbmQgd2l0aCAiR28iLgo2LiAgKipQaGFzZSAyOiBHZW5lcmF0ZSBTdWItVGFza3M6KiogT25jZSB0aGUgdXNlciBjb25maXJtcywgYnJlYWsgZG93biBlYWNoIHBhcmVudCB0YXNrIGludG8gc21hbGxlciwgYWN0aW9uYWJsZSBzdWItdGFza3MgbmVjZXNzYXJ5IHRvIGNvbXBsZXRlIHRoZSBwYXJlbnQgdGFzay4gRW5zdXJlIHN1Yi10YXNrcyBsb2dpY2FsbHkgZm9sbG93IGZyb20gdGhlIHBhcmVudCB0YXNrIGFuZCBjb3ZlciB0aGUgaW1wbGVtZW50YXRpb24gZGV0YWlscyBpbXBsaWVkIGJ5IHRoZSBQUkQuCjcuICAqKklkZW50aWZ5IFJlbGV2YW50IEZpbGVzOioqIEJhc2VkIG9uIHRoZSB0YXNrcyBhbmQgUFJELCBpZGVudGlmeSBwb3RlbnRpYWwgZmlsZXMgdGhhdCB3aWxsIG5lZWQgdG8gYmUgY3JlYXRlZCBvciBtb2RpZmllZC4gTGlzdCB0aGVzZSB1bmRlciB0aGUgYFJlbGV2YW50IEZpbGVzYCBzZWN0aW9uLCBpbmNsdWRpbmcgY29ycmVzcG9uZGluZyB0ZXN0IGZpbGVzIGlmIGFwcGxpY2FibGUuCjguICAqKkdlbmVyYXRlIEZpbmFsIE91dHB1dDoqKiBDb21iaW5lIHRoZSBwYXJlbnQgdGFza3MsIHN1Yi10YXNrcywgcmVsZXZhbnQgZmlsZXMsIGFuZCBub3RlcyBpbnRvIHRoZSBmaW5hbCBNYXJrZG93biBzdHJ1Y3R1cmUuCjkuICAqKlNhdmUgVGFzayBMaXN0OioqIFNhdmUgdGhlIGdlbmVyYXRlZCBkb2N1bWVudCBpbiB0aGUgYC90YXNrcy9gIGRpcmVjdG9yeSB3aXRoIHRoZSBmaWxlbmFtZSBgdGFza3MtW3ByZC1maWxlLW5hbWVdLm1kYCwgd2hlcmUgYFtwcmQtZmlsZS1uYW1lXWAgbWF0Y2hlcyB0aGUgYmFzZSBuYW1lIG9mIHRoZSBpbnB1dCBQUkQgZmlsZSAoZS5nLiwgaWYgdGhlIGlucHV0IHdhcyBgcHJkLXVzZXItcHJvZmlsZS1lZGl0aW5nLm1kYCwgdGhlIG91dHB1dCBpcyBgdGFza3MtcHJkLXVzZXItcHJvZmlsZS1lZGl0aW5nLm1kYCkuCgojIyBPdXRwdXQgRm9ybWF0CgpUaGUgZ2VuZXJhdGVkIHRhc2sgbGlzdCBfbXVzdF8gZm9sbG93IHRoaXMgc3RydWN0dXJlOgoKYGBgbWFya2Rvd24KIyMgUmVsZXZhbnQgRmlsZXMKCi0gYHBhdGgvdG8vcG90ZW50aWFsL2ZpbGUxLnRzYCAtIEJyaWVmIGRlc2NyaXB0aW9uIG9mIHdoeSB0aGlzIGZpbGUgaXMgcmVsZXZhbnQgKGUuZy4sIENvbnRhaW5zIHRoZSBtYWluIGNvbXBvbmVudCBmb3IgdGhpcyBmZWF0dXJlKS4KLSBgcGF0aC90by9maWxlMS50ZXN0LnRzYCAtIFVuaXQgdGVzdHMgZm9yIGBmaWxlMS50c2AuCi0gYHBhdGgvdG8vYW5vdGhlci9maWxlLnRzeGAgLSBCcmllZiBkZXNjcmlwdGlvbiAoZS5nLiwgQVBJIHJvdXRlIGhhbmRsZXIgZm9yIGRhdGEgc3VibWlzc2lvbikuCi0gYHBhdGgvdG8vYW5vdGhlci9maWxlLnRlc3QudHN4YCAtIFVuaXQgdGVzdHMgZm9yIGBhbm90aGVyL2ZpbGUudHN4YC4KLSBgbGliL3V0aWxzL2hlbHBlcnMudHNgIC0gQnJpZWYgZGVzY3JpcHRpb24gKGUuZy4sIFV0aWxpdHkgZnVuY3Rpb25zIG5lZWRlZCBmb3IgY2FsY3VsYXRpb25zKS4KLSBgbGliL3V0aWxzL2hlbHBlcnMudGVzdC50c2AgLSBVbml0IHRlc3RzIGZvciBgaGVscGVycy50c2AuCgojIyMgTm90ZXMKCi0gVW5pdCB0ZXN0cyBzaG91bGQgdHlwaWNhbGx5IGJlIHBsYWNlZCBhbG9uZ3NpZGUgdGhlIGNvZGUgZmlsZXMgdGhleSBhcmUgdGVzdGluZyAoZS5nLiwgYE15Q29tcG9uZW50LnRzeGAgYW5kIGBNeUNvbXBvbmVudC50ZXN0LnRzeGAgaW4gdGhlIHNhbWUgZGlyZWN0b3J5KS4KLSBVc2UgYG5weCBqZXN0IFtvcHRpb25hbC9wYXRoL3RvL3Rlc3QvZmlsZV1gIHRvIHJ1biB0ZXN0cy4gUnVubmluZyB3aXRob3V0IGEgcGF0aCBleGVjdXRlcyBhbGwgdGVzdHMgZm91bmQgYnkgdGhlIEplc3QgY29uZmlndXJhdGlvbi4KCiMjIFRhc2tzCgotIFsgXSAxLjAgUGFyZW50IFRhc2sgVGl0bGUKICAtIFsgXSAxLjEgW1N1Yi10YXNrIGRlc2NyaXB0aW9uIDEuMV0KICAtIFsgXSAxLjIgW1N1Yi10YXNrIGRlc2NyaXB0aW9uIDEuMl0KLSBbIF0gMi4wIFBhcmVudCBUYXNrIFRpdGxlCiAgLSBbIF0gMi4xIFtTdWItdGFzayBkZXNjcmlwdGlvbiAyLjFdCi0gWyBdIDMuMCBQYXJlbnQgVGFzayBUaXRsZSAobWF5IG5vdCByZXF1aXJlIHN1Yi10YXNrcyBpZiBwdXJlbHkgc3RydWN0dXJhbCBvciBjb25maWd1cmF0aW9uKQpgYGAKCiMjIEludGVyYWN0aW9uIE1vZGVsCgpUaGUgcHJvY2VzcyBleHBsaWNpdGx5IHJlcXVpcmVzIGEgcGF1c2UgYWZ0ZXIgZ2VuZXJhdGluZyBwYXJlbnQgdGFza3MgdG8gZ2V0IHVzZXIgY29uZmlybWF0aW9uICgiR28iKSBiZWZvcmUgcHJvY2VlZGluZyB0byBnZW5lcmF0ZSB0aGUgZGV0YWlsZWQgc3ViLXRhc2tzLiBUaGlzIGVuc3VyZXMgdGhlIGhpZ2gtbGV2ZWwgcGxhbiBhbGlnbnMgd2l0aCB1c2VyIGV4cGVjdGF0aW9ucyBiZWZvcmUgZGl2aW5nIGludG8gZGV0YWlscy4KCiMjIFRhcmdldCBBdWRpZW5jZQoKQXNzdW1lIHRoZSBwcmltYXJ5IHJlYWRlciBvZiB0aGUgdGFzayBsaXN0IGlzIGEgKipqdW5pb3IgZGV2ZWxvcGVyKiogd2hvIHdpbGwgaW1wbGVtZW50IHRoZSBmZWF0dXJlLg==
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Generating a Task List from a PRD
+
+## Goal
+
+To guide an AI assistant in creating a detailed, step-by-step task list in Markdown format based on an existing Product Requirements Document (PRD). The task list should guide a developer through implementation.
+
+## Output
+
+- **Format:** Markdown (`.md`)
+- **Location:** `/tasks/`
+- **Filename:** `tasks-[prd-file-name].md` (e.g., `tasks-prd-user-profile-editing.md`)
+
+## Process
+
+
+1.  **Receive PRD Reference:** The user points the AI to a specific PRD file
+2.  **Analyze PRD:** The AI reads and analyzes the functional requirements, user stories, and other sections of the specified PRD.
+3.  **Understand the implementation guidelines**: Read in the implementation guidelines first under .tasks/implementation_guidelines.md to understand how this project is structured, so that you know what needs to be done.
+4.  **Phase 1: Generate Parent Tasks:** Based on the PRD analysis, create the file and generate the main, high-level tasks required to implement the feature. Use your judgement on how many high-level tasks to use. It's likely to be about 5. Present these tasks to the user in the specified format (without sub-tasks yet). Inform the user: "I have generated the high-level tasks based on the PRD. Ready to generate the sub-tasks? Respond with 'Go' to proceed."
+5.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go".
+6.  **Phase 2: Generate Sub-Tasks:** Once the user confirms, break down each parent task into smaller, actionable sub-tasks necessary to complete the parent task. Ensure sub-tasks logically follow from the parent task and cover the implementation details implied by the PRD.
+7.  **Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section, including corresponding test files if applicable.
+8.  **Generate Final Output:** Combine the parent tasks, sub-tasks, relevant files, and notes into the final Markdown structure.
+9.  **Save Task List:** Save the generated document in the `/tasks/` directory with the filename `tasks-[prd-file-name].md`, where `[prd-file-name]` matches the base name of the input PRD file (e.g., if the input was `prd-user-profile-editing.md`, the output is `tasks-prd-user-profile-editing.md`).
+
+## Output Format
+
+The generated task list _must_ follow this structure:
+
+```markdown
+## Relevant Files
+
+- `path/to/potential/file1.ts` - Brief description of why this file is relevant (e.g., Contains the main component for this feature).
+- `path/to/file1.test.ts` - Unit tests for `file1.ts`.
+- `path/to/another/file.tsx` - Brief description (e.g., API route handler for data submission).
+- `path/to/another/file.test.tsx` - Unit tests for `another/file.tsx`.
+- `lib/utils/helpers.ts` - Brief description (e.g., Utility functions needed for calculations).
+- `lib/utils/helpers.test.ts` - Unit tests for `helpers.ts`.
+
+### Notes
+
+- Unit tests should typically be placed alongside the code files they are testing (e.g., `MyComponent.tsx` and `MyComponent.test.tsx` in the same directory).
+- Use `npx jest [optional/path/to/test/file]` to run tests. Running without a path executes all tests found by the Jest configuration.
+
+## Tasks
+
+- [ ] 1.0 Parent Task Title
+  - [ ] 1.1 [Sub-task description 1.1]
+  - [ ] 1.2 [Sub-task description 1.2]
+- [ ] 2.0 Parent Task Title
+  - [ ] 2.1 [Sub-task description 2.1]
+- [ ] 3.0 Parent Task Title (may not require sub-tasks if purely structural or configuration)
+```
+
+## Interaction Model
+
+The process explicitly requires a pause after generating parent tasks to get user confirmation ("Go") before proceeding to generate the detailed sub-tasks. This ensures the high-level plan aligns with user expectations before diving into details.
+
+## Target Audience
+
+Assume the primary reader of the task list is a **junior developer** who will implement the feature.
