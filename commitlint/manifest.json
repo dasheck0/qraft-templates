@@ -12,6 +12,7 @@
     "githook"
   ],
   "postInstall": [
+    "Run npm i --save-dev lefthook @commitlint/config-conventional @commitlint/cli",
     "Run npx lefthook install"
   ]
 }
