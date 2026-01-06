@@ -1,0 +1,16 @@
+{
+  "name": "opencode",
+  "description": "Agent and command definitions for opencode",
+  "author": "dasheck0",
+  "version": "1.0.0",
+  "defaultTarget": ".opencode",
+  "remotePath": "opencode",
+  "tags": [
+    "opencode",
+    "ai",
+    "agent",
+    "vibe coding",
+    "code",
+    "programming"
+  ]
+}
