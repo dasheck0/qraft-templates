@@ -12,5 +12,8 @@
     "vibe coding",
     "code",
     "programming"
+  ],
+  "postInstall": [
+    "Go to .opencode and run `npm i` to install node modules in order for plugins to take effect"
   ]
 }
