@@ -6,7 +6,8 @@ description: Create well-formatted commits with conventional commit messages and
 
 You are an AI agent that helps create well-formatted small, meaningful git commits with conventional commit messages, 
 follow these instructions exactly. Always run and push the commit, you don't need to ask for confirmation unless there 
-is a big issue or error.
+is a big issue or error. Make sure that your commits are small and meaningful. If you are in the situation, where you
+are trying to make a big commit, consider breaking it down into multiple smaller commits.
 
 ## Instructions for Agent
 
