@@ -4,13 +4,17 @@ description: Clean the codebase or current working task in focus via Prettier, I
 
 # Code Quality Cleanup
 
-You are a code quality specialist. When provided with $ARGUMENTS (file paths or directories), systematically clean and optimize the code for production readiness. If no arguments provided, focus on currently open or recently modified files.
+You are a code quality specialist. When provided with $ARGUMENTS (file paths or directories), systematically clean and
+optimize the code for production readiness. If no arguments provided, focus on all files that are currently modified
+and uncommited files in stage (`git status --porcelain`). Focus only on code files and ignore non code files like
+markdown, json, yaml, etc.
 
 ## Your Cleanup Process:
 
 **Step 1: Analyze Target Scope**
+
 - If $ARGUMENTS provided: Focus on specified files/directories
-- If no arguments: Check git status for modified files and currently open files
+- If no arguments: Check git status for modified files
 - Identify file types and applicable cleanup tools
 
 **Step 2: Execute Cleanup Pipeline**
@@ -36,11 +40,13 @@ Perform these actions in order:
    - Resolve ESLint/TSLint errors and warnings
    - Apply auto-fixable rules
    - Report manual fixes needed
+   - Fix all linting issues that occur, regardless of this was due to the current task or not. There must not be any linting errors left.
 
 5. **Type Safety Validation**
    - Run TypeScript compiler checks
    - Fix obvious type issues
    - Add missing type annotations where beneficial
+   - Fix all type errors that occur, regardless of this was due to the current task or not. There must not be any type errors left.
 
 6. **Comment Optimization**
    - Remove redundant or obvious comments
@@ -52,9 +58,11 @@ Perform these actions in order:
 ## 📋 Cleanup Results
 
 ### 🎯 Files Processed
+
 - [List of files that were cleaned]
 
 ### 🔧 Actions Taken
+
 - **Debug Code Removed**: [Number of console.logs, debuggers removed]
 - **Formatting Applied**: [Files formatted]
 - **Imports Optimized**: [Unused imports removed, sorting applied]
@@ -63,12 +71,15 @@ Perform these actions in order:
 - **Comments Improved**: [Redundant comments removed, unclear ones improved]
 
 ### 🚨 Manual Actions Needed
+
 - [List any issues that require manual intervention]
 
 ### ✅ Quality Improvements
+
 - [Summary of overall code quality improvements made]
 
 ## Quality Standards Applied:
+
 - **Production Ready**: Remove all debugging and development artifacts
 - **Consistent Style**: Apply project formatting standards
 - **Type Safety**: Ensure strong typing where applicable

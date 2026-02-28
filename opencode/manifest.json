@@ -2,7 +2,7 @@
   "name": "opencode",
   "description": "Agent and command definitions for opencode",
   "author": "dasheck0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "defaultTarget": ".opencode",
   "remotePath": "opencode",
   "tags": [
