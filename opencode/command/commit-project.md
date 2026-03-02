@@ -32,8 +32,11 @@ When the user runs this command, execute the following workflow:
 
 ## 2. Run pre-commit validation
 
-- Execute `npm lint`
-- Execute `npm build`
+- Execute `npm run lint`
+- Execute `npm run check`
+- Execute `npm run format`
+- Note that we also have `lint:fix`, `check:fix`, and `format:fix` scripts available for you to fix the most common issues automatically. Run those and fix remaining issues manually if you want to ensure a clean commit
+- Execute `npm run build`
 - If either fails:
   - Report the issue
   - Ask the user whether to proceed anyway or fix issues first
@@ -128,13 +131,13 @@ Message rules:
 
 ### Allowed Types
 
-- `feat`     — New feature
-- `fix`      — Bug fix
-- `docs`     — Documentation changes
-- `style`    — Formatting or non-functional style changes
+- `feat` — New feature
+- `fix` — Bug fix
+- `docs` — Documentation changes
+- `style` — Formatting or non-functional style changes
 - `refactor` — Code restructuring without behavior change
-- `test`     — Add or fix tests
-- `chore`    — Tooling, build system, dependency changes
+- `test` — Add or fix tests
+- `chore` — Tooling, build system, dependency changes
 
 ---
 

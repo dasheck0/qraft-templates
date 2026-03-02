@@ -1,0 +1,92 @@
+{
+  "skill_name": "supabase-logs",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Hey, something seems off with the agent-stream edge function — users are reporting that their sessions aren't completing properly. Can you check what's going on?",
+      "expected_output": "Claude runs the fetch-logs.js script for the agent-stream function, fetches both runtime and edge logs, and provides an analysis of what it found — including any errors, status codes, latency patterns, or suspicious log messages.",
+      "assertions": [
+        {
+          "name": "runs_fetch_logs_script",
+          "description": "Claude invokes the fetch-logs.js script via bash",
+          "type": "contains",
+          "value": "fetch-logs.js"
+        },
+        {
+          "name": "filters_by_function_name",
+          "description": "Claude passes --function agent-stream to narrow results",
+          "type": "contains",
+          "value": "--function agent-stream"
+        },
+        {
+          "name": "provides_analysis",
+          "description": "Claude explains what was found in the logs, not just dumps raw output",
+          "type": "llm_judge",
+          "criteria": "The response interprets the logs and explains patterns or issues, rather than just reproducing the raw output"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm getting a 500 error back from ai-chat-completion when I send certain messages. It's been happening for the last couple hours. What's the error?",
+      "expected_output": "Claude fetches logs for ai-chat-completion, looks at both runtime errors and HTTP 500 responses in the edge logs, and identifies the error message or stack trace causing the 500s.",
+      "assertions": [
+        {
+          "name": "runs_fetch_logs_script",
+          "description": "Claude invokes the fetch-logs.js script",
+          "type": "contains",
+          "value": "fetch-logs.js"
+        },
+        {
+          "name": "targets_correct_function",
+          "description": "Claude targets ai-chat-completion specifically",
+          "type": "contains",
+          "value": "ai-chat-completion"
+        },
+        {
+          "name": "uses_sufficient_time_window",
+          "description": "Claude uses at least a 2h time window given the user said 'last couple hours'",
+          "type": "llm_judge",
+          "criteria": "The fetch-logs command uses --last 2h or larger (e.g. 6h, 12h) rather than the default 30m"
+        },
+        {
+          "name": "reports_on_errors",
+          "description": "Claude explicitly mentions what errors or HTTP status codes it found",
+          "type": "llm_judge",
+          "criteria": "The response mentions specific error messages, status codes, or confirms that no errors were found in the logs"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can you pull the logs for all edge functions for the last hour and give me a summary of what's been happening?",
+      "expected_output": "Claude runs the script without --function filter, fetches all functions' logs, and produces a summary covering which functions were called, error rates, any notable runtime messages.",
+      "assertions": [
+        {
+          "name": "runs_fetch_logs_script",
+          "description": "Claude invokes the fetch-logs.js script",
+          "type": "contains",
+          "value": "fetch-logs.js"
+        },
+        {
+          "name": "uses_1h_window",
+          "description": "Claude uses --last 1h",
+          "type": "contains",
+          "value": "--last 1h"
+        },
+        {
+          "name": "no_function_filter",
+          "description": "Claude does NOT use --function to restrict to a single function",
+          "type": "llm_judge",
+          "criteria": "The fetch-logs command does not include a --function flag, since the user asked for all functions"
+        },
+        {
+          "name": "produces_summary",
+          "description": "Claude summarizes activity across multiple functions, not just one",
+          "type": "llm_judge",
+          "criteria": "The response provides a meaningful summary covering multiple edge functions or the overall traffic/error picture"
+        }
+      ]
+    }
+  ]
+}
