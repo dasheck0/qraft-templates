@@ -1,0 +1,57 @@
+{
+  "skill_name": "ui-ux-research",
+  "evals": [
+    {
+      "id": 0,
+      "name": "notification-center-webapp",
+      "prompt": "Ich will ein Notification Center implementieren für meine SaaS-App. Mach mir einen Design-Brief.",
+      "expected_output": "A structured design brief markdown file in docs/design/ with downloaded reference screenshots in docs/design/screenshots/. Should include pattern recommendations, UI details, UX principles table, and anti-patterns for notification center design.",
+      "files": [],
+      "assertions": [
+        { "id": "brief-file-exists", "text": "A markdown design brief file exists in docs/design/" },
+        { "id": "screenshots-exist", "text": "At least 3 screenshot image files exist in docs/design/screenshots/ with non-trivial file size (>5KB)" },
+        { "id": "has-tldr-section", "text": "The brief contains a TL;DR or summary section with at least 3 concrete recommendations" },
+        { "id": "has-reference-analysis", "text": "The brief analyses at least 3 real-world apps or sources (not just general advice)" },
+        { "id": "has-ux-principles", "text": "The brief references specific UX principles or laws (e.g. Jakob's Law, Hick's Law, NN/g)" },
+        { "id": "has-anti-patterns", "text": "The brief includes a section on what to avoid / anti-patterns" },
+        { "id": "has-platform-awareness", "text": "The brief specifically addresses web/SaaS context" },
+        { "id": "actionable-not-generic", "text": "Recommendations are concrete and actionable rather than vague" },
+        { "id": "has-ascii-wireframes", "text": "At least 2 ASCII wireframe .txt files exist in docs/design/wireframes/ and contain box-drawing characters (┌, │, └, ─) showing actual UI layout" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "tower-defense-upgrade-shop-game",
+      "prompt": "Ich baue gerade ein mobiles Phaser-Game, so ein Tower-Defense-Ding. Ich brauche ein Upgrade-System wo Nutzer zwischen Runden ihre Türme upgraden können. Irgendwie so ein Shop-Screen. Wie sollte das designt sein?",
+      "expected_output": "A structured design brief with game-UI-specific recommendations, screenshots from game UI databases, and Phaser/mobile-game-specific UX guidance.",
+      "files": [],
+      "assertions": [
+        { "id": "brief-file-exists", "text": "A markdown design brief or design document file exists in docs/design/" },
+        { "id": "screenshots-exist", "text": "At least 3 screenshot image files exist in docs/design/screenshots/ with non-trivial file size (>5KB)" },
+        { "id": "game-specific-references", "text": "The brief references at least 3 actual games (e.g. Kingdom Rush, Clash Royale, Brawl Stars, BTD6) as design references" },
+        { "id": "phaser-or-mobile-game-specifics", "text": "The brief includes Phaser-specific or mobile game-specific implementation advice" },
+        { "id": "between-rounds-context", "text": "The brief addresses the between-rounds time pressure context and its implications" },
+        { "id": "touch-targets", "text": "The brief addresses touch target sizes or mobile interaction constraints" },
+        { "id": "actionable-not-generic", "text": "Recommendations are concrete and actionable rather than vague" },
+        { "id": "has-ascii-wireframes", "text": "At least 2 ASCII wireframe .txt files exist in docs/design/wireframes/ and contain box-drawing characters (┌, │, └, ─) showing actual UI layout" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "inapp-chatbot-support-webapp",
+      "prompt": "Ich implementiere einen In-App-Chatbot für User-Support in meiner Web-App. Die Nutzer sollen Fragen stellen können und der Bot antwortet. Manchmal soll man auch an einen Menschen weiterleiten können. Schau mal wie das andere lösen und mach mir ein Design-Brief.",
+      "expected_output": "A structured design brief with chatbot UI pattern recommendations, human handoff UX patterns, reference screenshots, and mobile-aware layout recommendations.",
+      "files": [],
+      "assertions": [
+        { "id": "brief-file-exists", "text": "A markdown design brief file exists in docs/design/" },
+        { "id": "screenshots-exist", "text": "At least 3 screenshot image files exist in docs/design/screenshots/ with non-trivial file size (>5KB)" },
+        { "id": "real-product-references", "text": "The brief references at least 3 real products (e.g. Intercom, Zendesk, Crisp, Tidio) as design references" },
+        { "id": "human-handoff-covered", "text": "The brief has dedicated coverage of the human handoff UX pattern" },
+        { "id": "has-ux-principles", "text": "The brief references specific UX principles or psychology patterns relevant to chat UI" },
+        { "id": "widget-layout-covered", "text": "The brief covers chat widget placement, dimensions or layout decisions" },
+        { "id": "actionable-not-generic", "text": "Recommendations are concrete and actionable rather than vague" },
+        { "id": "has-ascii-wireframes", "text": "At least 2 ASCII wireframe .txt files exist in docs/design/wireframes/ and contain box-drawing characters (┌, │, └, ─) showing actual UI layout" }
+      ]
+    }
+  ]
+}

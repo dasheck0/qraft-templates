@@ -1,0 +1,16 @@
+{
+  "name": "opencode-global-skills",
+  "description": "A set of skills, that should be installed globally into ~/.config/opencode/skills (works also with Claude)",
+  "author": "dasheck0",
+  "version": "1.0.0",
+  "defaultTarget": "./skills",
+  "remotePath": "opencode-global-skills",
+  "tags": [
+    "opencode",
+    "claude",
+    "skills"
+  ],
+  "postInstall": [
+    "Move this to ~/.config/opencode/skills it not already done"
+  ]
+}

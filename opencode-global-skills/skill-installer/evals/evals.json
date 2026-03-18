@@ -1,0 +1,50 @@
+{
+  "skill_name": "skill-installer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "install skill from https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices to my project",
+      "expected_output": "Claude parses the URL, downloads via git sparse-checkout, runs security assessment, shows in-chat gist + full report path, asks for install confirmation, identifies ./.opencode/skills/ as project-local destination.",
+      "files": [],
+      "assertions": [
+        {"id": "url-parsed-correctly", "text": "Claude correctly parses the GitHub URL into owner, repo, branch, path, and skill_name (react-best-practices)"},
+        {"id": "uses-sparse-checkout", "text": "Claude uses git sparse-checkout (not a full clone) to download only the skill subdirectory"},
+        {"id": "security-report-produced", "text": "A security-report.md file is produced with a numeric score and at least one findings section"},
+        {"id": "in-chat-gist-shown", "text": "An in-chat security gist is shown with score, summary, and full report file path"},
+        {"id": "install-destination-correct", "text": "Project-local destination is identified as ./.opencode/skills/react-best-practices/ (not machine-wide)"},
+        {"id": "user-asked-to-confirm", "text": "Claude asks the user to confirm before installing (does not auto-install)"},
+        {"id": "temp-cleanup-mentioned", "text": "Claude mentions cleaning up the temp directory after installation"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "hey can you grab this skill and install it machine-wide? https://github.com/anthropics/claude-code-agent-skills/tree/main/skills/supabase-helper",
+      "expected_output": "Claude attempts git sparse-checkout, gets a 404 not found error, explains the error clearly, offers recovery options, confirms nothing was installed and temp was cleaned up.",
+      "files": [],
+      "assertions": [
+        {"id": "url-parsed-correctly", "text": "Claude correctly parses the URL extracting owner=anthropics, repo=claude-code-agent-skills, skill_name=supabase-helper"},
+        {"id": "machine-wide-destination-identified", "text": "Claude identifies machine-wide destination as ~/.config/opencode/skills/supabase-helper/"},
+        {"id": "sparse-checkout-attempted", "text": "Claude attempts git sparse-checkout (or equivalent) to download the skill"},
+        {"id": "error-handled-gracefully", "text": "When the repo is not found, Claude gives a clear error message explaining why (repo doesn't exist / may be private) rather than crashing silently"},
+        {"id": "nothing-installed-on-failure", "text": "Claude confirms nothing was installed and temp files were cleaned up"},
+        {"id": "recovery-options-offered", "text": "Claude suggests actionable next steps (check URL, authenticate for private repos, try correct URL)"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "install https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices — and make sure you do a thorough security check before installing",
+      "expected_output": "Claude downloads the skill, runs all 8 deterministic checks and 6 semantic checks, produces a full security-report.md, shows a concise in-chat gist with score and file path, then asks whether to install and where.",
+      "files": [],
+      "assertions": [
+        {"id": "all-8-deterministic-checks-run", "text": "Security report covers all 8 deterministic check categories (shell patterns, exfiltration, secrets, file types, external URLs, filesystem writes, obfuscation, file size)"},
+        {"id": "all-6-semantic-checks-run", "text": "Security report covers all 6 LLM semantic categories (prompt injection, scope manipulation, social engineering, data exfiltration, privilege escalation, misleading identity)"},
+        {"id": "numeric-score-computed", "text": "A numeric score between 0-100 is computed and clearly displayed"},
+        {"id": "score-breakdown-shown", "text": "The full report shows a score breakdown table explaining which deductions were applied and why"},
+        {"id": "full-report-saved-to-file", "text": "A full security-report.md file is saved and its path is given to the user in the chat"},
+        {"id": "in-chat-gist-is-concise", "text": "The in-chat gist is compact (not the full report) — shows score, brief summary, notable findings, and path to full report"},
+        {"id": "install-question-asked", "text": "After the security report, Claude asks whether to install and offers project-local vs machine-wide options"},
+        {"id": "recommendation-plain-language", "text": "The report includes a plain-language recommendation section that a non-expert could understand"}
+      ]
+    }
+  ]
+}
